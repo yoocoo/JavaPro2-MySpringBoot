@@ -12,6 +12,9 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+/**
+ * 数据接口的使用
+ */
 @Api(description = "后台获取用户信息的API接口，需要用户登录权限！")
 @RestController
 @RequestMapping("/endSys/api/user")
