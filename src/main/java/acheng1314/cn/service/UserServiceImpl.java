@@ -23,9 +23,9 @@ import java.util.List;
  */
 @Service("userService")
 @Aspect
-//        Spring只支持XML方式而没有实现注解的方式（也叫AspectJ方式）的AOP，
-//        所以要使用@Aspect注解，
-//        只能引入AspectJ相关的 jar 包 aopalliance-1.0.jar 和 aspectjweaver.jar。
+//  Spring只支持XML方式而没有实现注解的方式（也叫AspectJ方式）的AOP，
+// 所以要使用@Aspect注解，
+// 只能引入AspectJ相关的 jar 包 aopalliance-1.0.jar 和 aspectjweaver.jar。
 //@Pointcut()
 public class UserServiceImpl extends ServiceImpl<UserDao, User> {
 
@@ -63,7 +63,6 @@ public class UserServiceImpl extends ServiceImpl<UserDao, User> {
         }
 
         String encryptPassword = EncryptUtils.encryptPassword(userPass, result.getCreateDate().toString());
-        System.out.println("给个密码呗2：" + encryptPassword);
         if (!encryptPassword.equals(result.getPassword())) {
             throw new EnterInfoErrorException("用户名和密码不匹配！");
         }
