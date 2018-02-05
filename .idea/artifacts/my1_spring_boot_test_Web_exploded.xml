@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="my1-spring-boot_test:Web exploded">
+    <output-path>$PROJECT_DIR$/classes/artifacts/my1_spring_boot_test_Web_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="my1-spring-boot_test/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="my1-spring-boot_test" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

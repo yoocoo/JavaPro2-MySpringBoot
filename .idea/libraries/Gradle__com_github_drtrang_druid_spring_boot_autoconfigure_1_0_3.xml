@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.drtrang:druid-spring-boot-autoconfigure:1.0.3">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.drtrang/druid-spring-boot-autoconfigure/1.0.3/c0fbf44e4eb19c5c2c98e2286a824026f9a0fae1/druid-spring-boot-autoconfigure-1.0.3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.drtrang/druid-spring-boot-autoconfigure/1.0.3/cdad4b17e40f0adf3b9363463e677ef1e6cd76ca/druid-spring-boot-autoconfigure-1.0.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
