@@ -83,6 +83,8 @@ dependencies {
     compile 'org.springframework.boot:spring-boot-starter-aop:1.5.4.RELEASE'
 
     runtime 'mysql:mysql-connector-java:5.1.39'
+    compile 'org.springframework.boot:spring-boot-starter-redis:1.4.7.RELEASE'
+
 
     testCompile 'org.springframework.boot:spring-boot-starter-test:1.5.4.RELEASE'
     compile 'org.springframework.boot:spring-boot-starter-freemarker:1.5.4.RELEASE'

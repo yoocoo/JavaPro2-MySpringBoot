@@ -20,6 +20,8 @@ import java.util.Map;
  * Created by linjizong on 15/7/20.
  */
 @SuppressWarnings("unchecked")
+
+
 public class GsonUtils {
 
     private static Gson gson;
@@ -183,4 +185,27 @@ public class GsonUtils {
         }
         return toJson(result);
     }
+    /**
+     * 学习教程：
+     *
+     简介：java.lang.SuppressWarnings是J2SE5.0中标准的Annotation之一。可以标注在类、字段、方法、参数、构造方法，以及局部变量上。
+     作用：告诉编译器忽略指定的警告，不用在编译完成后出现警告信息。
+     使用：
+      1. @SuppressWarnings(“”)
+      2. @SuppressWarnings({})
+      3. @SuppressWarnings(value={})
+      * 示例：
+     ·  @SuppressWarnings("unchecked")
+     告诉编译器忽略 unchecked 警告信息，如使用List，ArrayList等未进行参数化产生的警告信息。
+     ·  @SuppressWarnings("serial")
+     如果编译器出现这样的警告信息：The serializable class WmailCalendar does notdeclare a static final serialVersionUID field of type long
+     使用这个注释将警告信息去掉。
+     ·  @SuppressWarnings("deprecation")
+     如果使用了使用@Deprecated注释的方法，编译器将出现警告信息。
+     使用这个注释将警告信息去掉。
+     ·  @SuppressWarnings("unchecked", "deprecation")
+     告诉编译器同时忽略unchecked和deprecation的警告信息。
+     ·  @SuppressWarnings(value={"unchecked", "deprecation"})
+     等同于@SuppressWarnings("unchecked", "deprecation")
+     */
 }
