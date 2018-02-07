@@ -13,6 +13,7 @@ import java.util.List;
 
 /**
  * Created by pc on 2017/8/11.
+ * Spring的注解形式：@Repository、@Service、@Controller，它们分别对应存储层Bean，业务层Bean，和展示层Bean。
  */
 @Repository("userDao")
 public interface UserDao extends BaseMapper<User> {

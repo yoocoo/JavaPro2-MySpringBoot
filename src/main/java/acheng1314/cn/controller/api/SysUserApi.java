@@ -30,6 +30,19 @@ public class SysUserApi {
         if (null != userList && userList.isEmpty()) return GsonUtils.toJsonObjStr(null, ResponseCode.EMPTY, null);
         return GsonUtils.toJsonObjStr(userList, ResponseCode.OK, "获取数据成功!");
     }
-
+/**
+ * 教程资料：
+ * 常见swagger注解一览与使用
+ *最常用的5个注解
+ * @Api：修饰整个类，描述Controller的作用
+ * @ApiOperation：描述一个类的一个方法，或者说一个接口
+ * @ApiParam：单个参数描述
+ * @ApiModel：用对象来接收参数
+ * @ApiProperty：用对象接收参数时，描述对象的一个字段
+ *
+ * 例子：
+        @ApiParam(value = "token", required = true) @RequestParam String token
+        Web前端/移动端HTTP请求方式：直接把参数附带到URL后面，或者用AJAX方法，表单提交。
+ */
 
 }

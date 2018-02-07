@@ -25,10 +25,11 @@ import java.util.Map;
 @Api(description = "控制后端页面导航，后端文件上传控制")
 public class SysMainController {
 
+//    @GetMapping是一个组合注解，是@RequestMapping(method = RequestMethod.GET)的缩写。
+// 该注解将HTTP Get 映射到 特定的处理方法上。
     @GetMapping(value = "/index", produces = MediaType.TEXT_HTML_VALUE)
     @ApiOperation(value = "后端主页框架", notes = "后端主页框架")
-    public String endMain(@ApiParam(hidden = true) ModelMap map
-            , @ApiParam(hidden = true) ShiroHttpServletRequest request) {
+    public String endMain(@ApiParam(hidden = true) ModelMap map, @ApiParam(hidden = true) ShiroHttpServletRequest request) {
         Object user = request.getSession().getAttribute("userInfo");
         map.put("user", user);
         return "end/index";

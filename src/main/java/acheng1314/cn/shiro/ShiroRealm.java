@@ -25,6 +25,7 @@ public class ShiroRealm extends AuthorizingRealm {
      */
     @Override
     protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken token) throws AuthenticationException {
+        //使用用户的登陆信息创建令牌
         UsernamePasswordToken user = (UsernamePasswordToken) token;
         LogE.getInstance(ShiroRealm.class).logOutLittle("开始登录====>\n用户为：" + user.getUsername());
 
