@@ -24,6 +24,7 @@ public class SysUserController {
     @Autowired
     private UserServiceImpl userService;
 
+    //@RequestMapping(value = "/userList",method =RequestMethod.GET )
     @GetMapping(value = "/userList", produces = MediaType.TEXT_HTML_VALUE)
     public String userList(@ApiParam(hidden = true) ModelMap map) {
         List<User> users = userService.selectList();

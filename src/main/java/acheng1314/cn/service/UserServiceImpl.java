@@ -31,8 +31,7 @@ public class UserServiceImpl extends ServiceImpl<UserDao, User> {
 
     @Transactional
     public void addOneUser(User entity) throws Exception {
-        if (StringUtils.isEmpty(entity.getLoginName(), entity.getPassword()))
-            throw new Exception("用户名或密码不能为空！");
+        if (StringUtils.isEmpty(entity.getLoginName(), entity.getPassword())) throw new Exception("用户名或密码不能为空！");
         //创建插入时间
         Integer createTime = DateUtil.getIntTime();
         entity.setCreateDate(createTime);
@@ -64,6 +63,8 @@ public class UserServiceImpl extends ServiceImpl<UserDao, User> {
 
         String encryptPassword = EncryptUtils.encryptPassword(userPass, result.getCreateDate().toString());
         if (!encryptPassword.equals(result.getPassword())) {
+            System.out.println("Service打印密码："+encryptPassword);
+
             throw new EnterInfoErrorException("用户名和密码不匹配！");
         }
         return result;
