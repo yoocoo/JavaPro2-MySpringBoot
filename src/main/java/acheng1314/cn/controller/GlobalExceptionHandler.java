@@ -10,8 +10,8 @@ import javax.servlet.http.HttpServletRequest;
 //
 //  1.RestController, 表明 GlobalExceptionHandler 是一个 RESTful Controller, 即它会以 RESTful 的形式返回回复.
 //
-//  2.ControllerAdvice, 表示 GlobalExceptionHandler 是一个全局的异常处理器.
-@ControllerAdvice
+//  2.ControllerAdvice, 表示 GlobalExceptionHandler 是一个全局的异常处理器 .
+@ControllerAdvice//定义统一的异常处理类，修饰class
 public class GlobalExceptionHandler {
     public static final String DEFAULT_ERROR_VIEW = "error";
 

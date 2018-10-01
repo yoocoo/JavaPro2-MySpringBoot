@@ -19,15 +19,28 @@
 spring:
   profiles:
     # 默认环境为 default，多数据源演示请改为 dynamic
-    active: default
+#    active: default
+    active: dynamic
   output:
     ansi:
       enabled: always
+      data:
+        mongodb:
+            primary:
+              host: 127.0.0.1
+              port: 27017
+              database: test
+            secondary:
+              host: 127.0.0.1
+              port: 27017
+              database: test2
+
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3308/ccdb?useUnicode=true&characterEncoding=utf8&autoReconnect=true
     username: root
     password: jiao945
+#  框架作者明显告诉我们需要创建一个application.yml的约定文件来配置Druid相关的参数。
     druid:
       # spring.datasource.druid 前缀的配置将注入到 DruidParentDataSource，作为公共参数
       initial-size: 1
@@ -137,6 +150,29 @@ mybatis-plus:
 
 server:
   port: 8181
+
+## Redis配置
+# redis:
+# # Redis服务器地址
+##  host: 127.0.0.1
+#  host: 192.168.0.58
+#  # Redis服务器连接端口
+#  port: 6379
+#  # Redis服务器连接密码（默认为空）
+#  password:
+#  # 连接超时时间（毫秒）
+#  timeout: 10000
+#  pool:
+#  # 连接池最大连接数（使用负值表示没有限制）
+#  # 连接池中的最大空闲连接
+#   max-idle: 20
+#   # 连接池中的最小空闲连接
+#   min-idle: 5
+#   # 连接池最大连接数（使用负值表示没有限制）
+#   max-active: 20
+#   # 连接池最大阻塞等待时间（使用负值表示没有限制）
+#   max-wait: 2
+
 
 #server:
 #  servlet-path: "/"

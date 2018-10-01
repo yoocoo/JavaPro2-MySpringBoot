@@ -7,7 +7,14 @@
    2.学习资料一：http://blog.csdn.net/ityouknow/article/details/70139667
    后续待更新，
    2018-02-07----
-   理解 shiro
+   （一）理解 shiro
    Shiro的核心部分是SecurityManager，它负责安全认证与授权。Shiro本身已经实现了所有的细节，用户可以完全把它当做一个黑盒来使用。SecurityUtils对象，本质上就是一个工厂类似Spring中的ApplicationContext。Subject是初学者比较难于理解的对象，很多人以为它可以等同于User，其实不然。Subject中文翻译：项目，而正确的理解也恰恰如此。
    它是你目前所设计的需要通过Shiro保护的项目的一个抽象概念。通过令牌（token）与项目（subject）的登陆（login）关系，Shiro保证了项目整体的安全。
    框架解析：https://www.cnblogs.com/learnhow/p/5694876.html
+   （二） AOP统一处理请求日志
+   AOP是一种编程范式，与语言无关，是一种程序设计思想
+    1. 面向切面（AOP） Aspect Oriented Programming
+    2.面向对象（OOP） Object Oriented Programming
+    3.面向过程（POP） Procedure Oriented Programming 
+   
+   

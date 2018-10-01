@@ -16,6 +16,9 @@ import org.springframework.context.annotation.Configuration;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
+/**
+ * 1.实现访问控制的方法有多种，可以通过AOP、拦截器实现、也可以通过框架（Apache Shiro 、SpringSecurity）
+ */
 @Configuration
 public class ShiroConfig {
 

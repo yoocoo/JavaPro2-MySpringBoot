@@ -15,8 +15,8 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 import java.util.Properties;
 
 /**
- * Spring Boot 应用启动类
- *
+ * Spring Boot 应用启动类(程序的入口)
+ * 注：尽管Spring Boot兼容Java 1.6，如果可能的话，你应该考虑使用Java最新版本。
  * @author acheng
  */
 @SpringBootApplication

@@ -22,12 +22,15 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 @Controller
-//1.@Controller 修饰对象是类，用来创建处理http请求的对象
-//2.@RestController  //Spring4之后新加的注解，原来返回json需要@ResponseBody配合@Controller
-//3.@RequestMapping //配置url映射
-//4.注意： 配置@Controller 就不需要配置@ResponseBody,默认返回json格式
 /**
- * @ApiOperation注解来给API增加说明、通过@ApiImplicitParams、@ApiImplicitParam注解来给参数增加说明。
+    1.@Controller 修饰对象是类，用来创建处理http请求的对象
+    2.@RestController  //Spring4之后新加的注解，原来返回json需要@ResponseBody配合@Controller
+    3.@RequestMapping //配置url映射
+    4.注意： 配置@Controller 就不需要配置@ResponseBody,默认返回json格式
+ */
+
+/**
+   @ApiOperation注解来给API增加说明、通过@ApiImplicitParams、@ApiImplicitParam注解来给参数增加说明。
  */
 @Api(description = "外层信息，无需Shiro接管，集成文件下载控制器")
 public class MainController {

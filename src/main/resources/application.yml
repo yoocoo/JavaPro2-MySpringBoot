@@ -19,15 +19,28 @@
 spring:
   profiles:
     # 默认环境为 default，多数据源演示请改为 dynamic
-    active: default
+#    active: default
+    active: dynamic
   output:
     ansi:
       enabled: always
+      data:
+        mongodb:
+            primary:
+              host: 127.0.0.1
+              port: 27017
+              database: test
+            secondary:
+              host: 127.0.0.1
+              port: 27017
+              database: test2
+
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3308/ccdb?useUnicode=true&characterEncoding=utf8&autoReconnect=true
     username: root
     password: jiao945
+#  框架作者明显告诉我们需要创建一个application.yml的约定文件来配置Druid相关的参数。
     druid:
       # spring.datasource.druid 前缀的配置将注入到 DruidParentDataSource，作为公共参数
       initial-size: 1
